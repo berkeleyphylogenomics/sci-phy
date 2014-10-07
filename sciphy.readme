@@ -1,0 +1,14 @@
+------------------------------------------------------------------------------
+SCIPHY - Subfamily Classification In PHYlogenomics
+VERSION: 3.01
+PLoS Computational Biology, 3, e160, 1526-1538 (2007)
+------------------------------------------------------------------------------
+Usage: sciphy [options] -i aln_file -o out_file
+
+Available options are:
+   -h               : print help
+   -m               : dirichlet mixture: recode4, blocks9 (Default=recode4)
+   -rw              : relative weighting method: pw, none. pw is Henikoff position-weighted scheme. (Default=pw)
+   -skip_inserts    : skip columns representing insert states, in which residues are represented in lower case in alignment in UCSC a2m format.
+   -mino            : minimum percent overlap between two profiles for them to be joined. (Default=10)
+   -tree            : output tree (Newick format) in a file

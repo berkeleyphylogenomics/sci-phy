@@ -1,0 +1,67 @@
+Usage: SCI-PHY prefix [options]
+    -m dirichlet_mixture_file (default is recode4.20comp)
+    -i input_msa_file (default is <prefix>.fa)
+    -in_tree treefile (input tree in Newick format)
+    -d debuglevel (default is 2)
+        0 = quiet
+        1 = normal
+        2 = verbose
+        3 = output GUI feedback lines
+    -cutoff value (default = 2.0, multiple values allowed)
+    -subfam function (default = ecost, others = dist, entropy, none)
+    -dist function (default = tre, others = affinity, pwid, hmm, logodds)
+    -toplevel_forest
+    -measure
+    -measure_ec
+    -profiles
+    -print_align
+    -print_tree
+    -width ncols (default 80)
+    -nthreads n (default 1)
+    -no_tree
+    -no_shmms
+    -tree_hmms
+    -tree_hmm_pwid minvalue maxvalue (default none)
+    -tree_hmm_skip name
+    -tree_hmm_local
+    -name_segment pos (default none)
+    -min_overlap ncols (default 10)
+    -cluster pwid (default 0)
+    -cluster_star
+    -no_skip_inserts
+    -abs_ecost
+    -total
+    -skip_sequence name
+    -hmm general_hmm
+    -no_hmm
+    -only_subfam_profile
+    -change_subfam_alphas
+    -write_node_data
+    -max_subfam_contrib value (default 3.0)
+    -max_indep_counts value (default 3.0)
+    -max_indep_counts_min value (default 3.0)
+    -max_indep_counts_factor value (default 1.0)
+    -score hmm
+    -sam_path directory
+    -print_bg_probs
+    -satchmo
+    -ecost_sfam_factor value (default 1)
+    -num_sf (default 0)
+    -verbose_xml (default 0)
+    -write_distance_to prefix
+
+Output files are:
+    <prefix>.subfam - subfamily decomposition in FA format
+    <prefix>.sfreps - subfamily consensus sequences in FA format
+    <prefix>.tree - output tree in Newick format
+    <prefix>.gtree - output tree in Gtree format
+    <prefix>.xml - output tree in Gtree XML format
+    <prefix>.ndist - node distance history file
+    <prefix>.cost - node joining cost history file
+
+Authors: Wayne Christopher (waynech@uclink.berkeley.edu)
+         Duncan Brown (duncanb@dnai.com)
+         Kimmen Sjolander (kimmen@uclink.berkeley.edu)
+         Berkeley Phylogenomics Group
+
+Copyright (c) 2002 Regents of the University of California
